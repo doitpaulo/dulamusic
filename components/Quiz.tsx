@@ -174,8 +174,8 @@ const Quiz: React.FC<QuizProps> = ({ trail, onComplete, onExit }) => {
       
       {isAnswered && (
         <footer className={`fixed bottom-0 left-0 right-0 p-4 transition-transform transform translate-y-0 ${feedbackBgColor}`}>
-          <div className="max-w-3xl mx-auto flex justify-between items-center">
-            <div className="flex-1 pr-4">
+          <div className="max-w-3xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="flex-1 w-full sm:w-auto">
               <div className="flex items-center gap-3">
                 {feedback && <feedback.Icon className={`w-8 h-8 flex-shrink-0 ${feedback.color}`} />}
                 <p className={`text-xl font-bold ${feedback.color}`}>{feedback?.message}</p>
@@ -188,7 +188,7 @@ const Quiz: React.FC<QuizProps> = ({ trail, onComplete, onExit }) => {
             </div>
             <button
               onClick={handleContinue}
-              className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-xl text-lg transition-transform transform hover:scale-105"
+              className="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-xl text-lg transition-transform transform hover:scale-105"
             >
               Continuar
             </button>

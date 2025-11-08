@@ -89,12 +89,12 @@ export const quizData: Module[] = [
         questions: [
           { id: 41, questionText: "Quantos sustenidos existem na armadura de Sol maior?", options: [{ text: "2", isCorrect: false }, { text: "1", isCorrect: true }, { text: "3", isCorrect: false }, { text: "4", isCorrect: false }] },
           { id: 42, questionText: "Quantos bemóis existem na armadura de Fá maior?", options: [{ text: "2", isCorrect: false }, { text: "1", isCorrect: true }, { text: "3", isCorrect: false }, { text: "4", isCorrect: false }] },
-          { id: 43, questionText: "Qual é a nota alterada na armadura de Ré maior?", options: [{ text: "Fá#", isCorrect: true }, { text: "Dó#", isCorrect: false }, { text: "Sol#", isCorrect: false }, { text: "Si#", isCorrect: false }] },
-          { id: 44, questionText: "Qual é a nota alterada na armadura de Si bemol maior?", options: [{ text: "Sib", isCorrect: true }, { text: "Mib", isCorrect: false }, { text: "Láb", isCorrect: false }, { text: "Fáb", isCorrect: false }] },
+          { id: 43, questionText: "Quais são as notas alteradas na armadura de Ré maior?", options: [{ text: "Fá# e Dó#", isCorrect: true }, { text: "Apenas Fá#", isCorrect: false }, { text: "Apenas Dó#", isCorrect: false }, { text: "Sol# e Ré#", isCorrect: false }] },
+          { id: 44, questionText: "Quais são as notas alteradas na armadura de Si bemol maior?", options: [{ text: "Sib e Mib", isCorrect: true }, { text: "Apenas Sib", isCorrect: false }, { text: "Apenas Mib", isCorrect: false }, { text: "Láb e Réb", isCorrect: false }] },
           { id: 45, questionText: "Qual armadura tem 3 sustenidos?", options: [{ text: "Lá maior", isCorrect: true }, { text: "Mi maior", isCorrect: false }, { text: "Ré maior", isCorrect: false }, { text: "Sol maior", isCorrect: false }] },
           { id: 46, questionText: "Qual armadura tem 2 bemóis?", options: [{ text: "Sib maior", isCorrect: true }, { text: "Fá maior", isCorrect: false }, { text: "Mib maior", isCorrect: false }, { text: "Dó maior", isCorrect: false }] },
           { id: 47, questionText: "Quantos sustenidos tem a armadura de Mi maior?", options: [{ text: "4", isCorrect: true }, { text: "3", isCorrect: false }, { text: "5", isCorrect: false }, { text: "2", isCorrect: false }] },
-          { id: 48, questionText: "Qual nota é alterada na armadura de Lá maior?", options: [{ text: "Fá#", isCorrect: false }, { text: "Dó#", isCorrect: false }, { text: "Sol#", isCorrect: true }, { text: "Si#", isCorrect: false }] },
+          { id: 48, questionText: "Quais são as notas alteradas na armadura de Lá maior?", options: [{ text: "Fá#, Dó# e Sol#", isCorrect: true }, { text: "Apenas Sol#", isCorrect: false }, { text: "Fá# e Dó#", isCorrect: false }, { text: "Ré#, Lá# e Mi#", isCorrect: false }] },
         ]
       },
       {
@@ -115,7 +115,7 @@ export const quizData: Module[] = [
         id: "m2t3",
         title: "Compassos Compostos e Simples",
         questions: [
-          { id: 57, questionText: "Quantos tempos tem um compasso 12/8?", options: [{ text: "4", isCorrect: true }, { text: "3", isCorrect: false }, { text: "6", isCorrect: false }, { text: "12", isCorrect: false }] }, // Corrected answer based on music theory, 12/8 is 4 beats of dotted crotchets
+          { id: 57, questionText: "Quantos tempos tem um compasso 12/8?", options: [{ text: "4", isCorrect: true }, { text: "3", isCorrect: false }, { text: "6", isCorrect: false }, { text: "12", isCorrect: false }] },
           { id: 58, questionText: "Quantos tempos tem um compasso 9/8?", options: [{ text: "3", isCorrect: true }, { text: "9", isCorrect: false }, { text: "6", isCorrect: false }, { text: "4", isCorrect: false }] },
           { id: 59, questionText: "Quantos tempos tem um compasso 6/8?", options: [{ text: "2", isCorrect: true }, { text: "3", isCorrect: false }, { text: "6", isCorrect: false }, { text: "4", isCorrect: false }] },
           { id: 60, questionText: "Quantos tempos tem um compasso 3/4?", options: [{ text: "3", isCorrect: true }, { text: "4", isCorrect: false }, { text: "2", isCorrect: false }, { text: "1", isCorrect: false }] },
@@ -129,14 +129,14 @@ export const quizData: Module[] = [
         id: "m2t4",
         title: "Escalas Maiores e Menores",
         questions: [
-          { id: 65, questionText: "Qual é a nota final da escala de Dó maior?", options: [{ text: "Dó", isCorrect: true }, { text: "Ré", isCorrect: false }, { text: "Mi", isCorrect: false }, { text: "Sol", isCorrect: false }] },
-          { id: 66, questionText: "Qual é a nota final da escala de Sol maior?", options: [{ text: "Sol", isCorrect: true }, { text: "Fá#", isCorrect: false }, { text: "Lá", isCorrect: false }, { text: "Ré", isCorrect: false }] },
-          { id: 67, questionText: "Qual é a nota final da escala de Ré maior?", options: [{ text: "Ré", isCorrect: true }, { text: "Fá#", isCorrect: false }, { text: "Mi", isCorrect: false }, { text: "Sol", isCorrect: false }] },
-          { id: 68, questionText: "Qual é a nota final da escala de Mi menor?", options: [{ text: "Mi", isCorrect: true }, { text: "Sol", isCorrect: false }, { text: "Lá", isCorrect: false }, { text: "Si", isCorrect: false }] },
-          { id: 69, questionText: "Qual é a nota final da escala de Lá menor?", options: [{ text: "Lá", isCorrect: true }, { text: "Si", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Ré", isCorrect: false }] },
-          { id: 70, questionText: "Qual é a nota final da escala de Fá maior?", options: [{ text: "Fá", isCorrect: true }, { text: "Mi", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Sol", isCorrect: false }] },
-          { id: 71, questionText: "Qual é a nota final da escala de Si menor?", options: [{ text: "Si", isCorrect: true }, { text: "Ré", isCorrect: false }, { text: "Fá#", isCorrect: false }, { text: "Sol", isCorrect: false }] },
-          { id: 72, questionText: "Qual é a nota final da escala de Sol menor?", options: [{ text: "Sol", isCorrect: true }, { text: "Lá", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Fá", isCorrect: false }] },
+          { id: 65, questionText: "Qual é a mediante (III grau) da escala de Dó maior?", options: [{ text: "Mi", isCorrect: true }, { text: "Ré", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Sol", isCorrect: false }] },
+          { id: 66, questionText: "Qual é a sensível (VII grau) da escala de Sol maior?", options: [{ text: "Fá#", isCorrect: true }, { text: "Sol", isCorrect: false }, { text: "Lá", isCorrect: false }, { text: "Ré", isCorrect: false }] },
+          { id: 67, questionText: "Qual é a subdominante (IV grau) da escala de Ré maior?", options: [{ text: "Sol", isCorrect: true }, { text: "Fá#", isCorrect: false }, { text: "Mi", isCorrect: false }, { text: "Ré", isCorrect: false }] },
+          { id: 68, questionText: "Qual é a sensível (VII grau) da escala de Mi menor harmônica?", options: [{ text: "Ré#", isCorrect: true }, { text: "Sol", isCorrect: false }, { text: "Lá", isCorrect: false }, { text: "Mi", isCorrect: false }] },
+          { id: 69, questionText: "Qual é a supertônica (II grau) da escala de Lá menor?", options: [{ text: "Si", isCorrect: true }, { text: "Lá", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Ré", isCorrect: false }] },
+          { id: 70, questionText: "Qual é a subdominante (IV grau) da escala de Fá maior?", options: [{ text: "Sib", isCorrect: true }, { text: "Mi", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Sol", isCorrect: false }] },
+          { id: 71, questionText: "Qual é a mediante (III grau) da escala de Si menor?", options: [{ text: "Ré", isCorrect: true }, { text: "Si", isCorrect: false }, { text: "Fá#", isCorrect: false }, { text: "Sol", isCorrect: false }] },
+          { id: 72, questionText: "Qual é a dominante (V grau) da escala de Sol menor?", options: [{ text: "Ré", isCorrect: true }, { text: "Lá", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Fá", isCorrect: false }] },
         ]
       },
       {
@@ -192,12 +192,12 @@ export const quizData: Module[] = [
         id: "m3t3",
         title: "Alterações, Armaduras e Modulações",
         questions: [
-          { id: 97, questionText: "Qual nota é aumentada na tonalidade de Ré maior?", options: [{ text: "Fá#", isCorrect: true }, { text: "Dó#", isCorrect: false }, { text: "Sol#", isCorrect: false }, { text: "Si#", isCorrect: false }] },
+          { id: 97, questionText: "Quais são as notas sustenidas na tonalidade de Ré maior?", options: [{ text: "Fá# e Dó#", isCorrect: true }, { text: "Apenas Fá#", isCorrect: false }, { text: "Apenas Dó#", isCorrect: false }, { text: "Sol# e Ré#", isCorrect: false }] },
           { id: 98, questionText: "Quantos sustenidos tem a armadura de Mi maior?", options: [{ text: "4", isCorrect: true }, { text: "3", isCorrect: false }, { text: "5", isCorrect: false }, { text: "2", isCorrect: false }] },
-          { id: 99, questionText: "Qual nota é alterada na armadura de Lá maior?", options: [{ text: "Dó#", isCorrect: false }, { text: "Fá#", isCorrect: false }, { text: "Sol#", isCorrect: true }, { text: "Si#", isCorrect: false }] },
+          { id: 99, questionText: "Quais são as notas alteradas na armadura de Lá maior?", options: [{ text: "Fá#, Dó# e Sol#", isCorrect: true }, { text: "Apenas Sol#", isCorrect: false }, { text: "Fá# e Dó#", isCorrect: false }, { text: "Ré#, Lá# e Mi#", isCorrect: false }] },
           { id: 100, questionText: "Quantos bemóis tem a armadura de Si bemol maior?", options: [{ text: "2", isCorrect: true }, { text: "1", isCorrect: false }, { text: "3", isCorrect: false }, { text: "4", isCorrect: false }] },
           { id: 101, questionText: "Qual é a nota alterada na tonalidade de Fá maior?", options: [{ text: "Sib", isCorrect: true }, { text: "Mi", isCorrect: false }, { text: "Dó", isCorrect: false }, { text: "Sol", isCorrect: false }] },
-          { id: 102, questionText: "Qual nota é alterada na tonalidade de Dó# maior?", options: [{ text: "Si#", isCorrect: true }, { text: "Fá#", isCorrect: false }, { text: "Sol#", isCorrect: false }, { text: "Dó#", isCorrect: false }] }, // Corrected: Dó# Major has 7 sharps, all notes are sharp
+          { id: 102, questionText: "Qual é o último sustenido na armadura da tonalidade de Dó# maior?", options: [{ text: "Si#", isCorrect: true }, { text: "Mi#", isCorrect: false }, { text: "Lá#", isCorrect: false }, { text: "Ré#", isCorrect: false }] },
           { id: 103, questionText: "Qual modulação comum vai de Dó maior para Sol maior?", options: [{ text: "Subdominante", isCorrect: false }, { text: "Dominante", isCorrect: true }, { text: "Tônica", isCorrect: false }, { text: "Relativa menor", isCorrect: false }] },
           { id: 104, questionText: "Qual modulação comum vai de Ré menor para Fá maior?", options: [{ text: "Relativa maior", isCorrect: true }, { text: "Dominante", isCorrect: false }, { text: "Tônica", isCorrect: false }, { text: "Subdominante", isCorrect: false }] },
         ]

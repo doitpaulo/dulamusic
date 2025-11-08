@@ -103,27 +103,29 @@ const App: React.FC = () => {
           return (
             <Fragment key={trail.id}>
               {isFirstOfModule && (
-                 <div className="text-center my-10 p-4 bg-slate-800/50 rounded-xl border border-slate-700">
+                 <div className="text-center my-8 sm:my-10 p-4 bg-slate-800/50 rounded-xl border border-slate-700">
                     <h2 className="text-2xl font-bold text-cyan-300">{trail.module.title}</h2>
                     <p className="text-slate-400">{trail.module.level}</p>
                 </div>
               )}
               <div className="flex flex-col items-center">
-                  <button
-                    onClick={() => isTrailUnlocked && handleStartTrail(trail)}
-                    disabled={!isTrailUnlocked}
-                    className="group relative"
-                    aria-label={trail.title}
-                  >
-                    <div className={`w-28 h-28 rounded-full flex items-center justify-center text-white transition-all duration-300 transform group-hover:scale-110 disabled:transform-none disabled:cursor-not-allowed border-4 shadow-lg ${getTrailColor()}`}>
-                      {icon}
-                    </div>
-                    <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-max bg-slate-800 text-white text-sm font-bold px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <div className="text-center">
+                    <button
+                      onClick={() => isTrailUnlocked && handleStartTrail(trail)}
+                      disabled={!isTrailUnlocked}
+                      className="group"
+                      aria-label={trail.title}
+                    >
+                      <div className={`w-24 h-24 sm:w-28 sm:h-28 rounded-full flex items-center justify-center text-white transition-all duration-300 transform group-hover:scale-110 disabled:transform-none disabled:cursor-not-allowed border-4 shadow-lg ${getTrailColor()}`}>
+                        {icon}
+                      </div>
+                    </button>
+                    <p className="mt-2 text-sm sm:text-base font-semibold text-slate-300 w-28 mx-auto truncate" title={trail.title}>
                       {trail.title}
-                    </div>
-                  </button>
+                    </p>
+                  </div>
                   {index < allTrailsWithModule.length - 1 && (
-                     <div className="w-2 h-16 bg-slate-700/50" />
+                     <div className="w-2 h-12 bg-slate-700/50 mt-2" />
                   )}
               </div>
             </Fragment>

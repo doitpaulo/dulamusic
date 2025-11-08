@@ -54,7 +54,7 @@ const ProfileSetup: React.FC<ProfileSetupProps> = ({ onSave }) => {
                                         key={avatarId}
                                         type="button"
                                         onClick={() => setSelectedAvatar(avatarId)}
-                                        className={`w-20 h-20 rounded-full flex items-center justify-center transition-all duration-200 transform hover:scale-110 ${selectedAvatar === avatarId ? 'bg-cyan-500 ring-4 ring-cyan-300' : 'bg-slate-700'}`}
+                                        className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center transition-all duration-200 transform hover:scale-110 ${selectedAvatar === avatarId ? 'bg-cyan-500 ring-4 ring-cyan-300' : 'bg-slate-700'}`}
                                     >
                                         <Avatar />
                                     </button>
