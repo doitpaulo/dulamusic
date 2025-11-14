@@ -9,11 +9,20 @@ export interface Option {
   isCorrect: boolean;
 }
 
+export interface AudioPayload {
+    type: 'sequence' | 'chord' | 'progression';
+    notes?: string[]; // for sequence or single chord
+    chords?: string[][]; // for progression
+    duration?: number; // duration of each note/chord in seconds
+    staccato?: boolean; // for articulation examples
+}
+
 export interface Question {
   id: number;
   questionText: string;
   options: Option[];
   explanation?: string;
+  audio?: AudioPayload;
 }
 
 export interface Trail {
